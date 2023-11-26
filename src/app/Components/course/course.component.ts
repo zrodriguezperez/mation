@@ -5,7 +5,7 @@ import { Course } from 'src/app/models/Course.model';
   selector: 'app-course',
   templateUrl: './course.component.html',
   styleUrls: ['./course.component.css'],
-  encapsulation: ViewEncapsulation.ShadowDom,
+  encapsulation: ViewEncapsulation.None,
 })
 export class CourseComponent {
    @Input() course!: Course;
