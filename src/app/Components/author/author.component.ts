@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./author.component.css']
 })
 export class AuthorComponent {
+  isActive: string = 'is-active';
 
+  getActiveClasses(){
+    return ['isActive'];
+  }
 }
