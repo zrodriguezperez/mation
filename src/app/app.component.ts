@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Course } from './models/Course.model';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,5 @@ import { Course } from './models/Course.model';
 })
 export class AppComponent {
 
-  courses: Course[]=[
-    {title: 'Angular Complete Course', isActive:false},
-    {title: 'Angular Unit Testing', isActive:false},
-    {title: 'Angular RxJs', isActive:false},
-  ];
   title = 'mation';
 }
