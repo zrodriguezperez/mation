@@ -1,0 +1,46 @@
+.selected {
+    border: 2px solid blue;
+    animation: selectedMove 0.5s ease-out;
+  }
+
+@keyframes selectedMove {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.02);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.inactive {
+  border: 1px solid #ccc;
+}
+
+.loading-bar {
+  width: 100px;
+  height: 20px;
+  border: 1px solid black;
+  margin-top: 20%;
+  margin-left: 45%;
+  box-sizing: content-box;
+}
+
+.loading-bar-element{
+  width: 100px;
+  height: 20px;
+  background-color: lightblue;
+  animation: loading 1s linear infinite; 
+}
+
+@keyframes loading {
+    0% {
+      width: 0px;
+    }
+
+    100% {
+      width: 100px;
+    }
+}

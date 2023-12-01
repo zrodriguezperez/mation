@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'mation';
+  // divClicked = false;
+  // moveClicked = false;
+  
+  // onColorChange(){
+  //   this.divClicked = true;
+  // }
 }

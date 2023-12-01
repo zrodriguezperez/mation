@@ -1,5 +1,5 @@
 <h3>{{ course_x.name }}
-    <span class="label label-default">
+    <span class="badge" [ngClass]="getCourseStatusClass()">
                  {{course_x.status}}</span>
 </h3>
 <hr>
@@ -9,8 +9,13 @@
     <select class="form-select" #statusRef>
         <option value="active">Active</option>
         <option value="inactive">InActive</option>
+        <option disabled>----------------</option>
         <option value="draft">Draft</option>
     </select>
-    <button class="btn btn-primary"
+    <!-- &nbsp; -->
+    <button class="btn btn-primary mx-1"
             (click)="onStatusUpdate()">Update Status</button>
+    <!-- &nbsp; -->
+    <button class="btn btn-danger mx-1"
+            (click)="onCourseDelete()">Delete Course</button>
 </div>
